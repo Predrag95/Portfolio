@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.nav-bar {
+  width: 70%;
+  margin: 0 auto;
+  height: 14vh;
+  align-items: center;
+  display: flex;
+}
+
+  /* font-family: 'Bungee', cursive;
+  font-family: 'Red Hat Display', sans-serif; */
+
+.nav {
+  flex: 1;
+}
+
+.logo {
+  flex: 2;
+  font-family: 'Bungee', cursive;
+  font-size: 35px;
+}
+
+.logo span {
+  color: orange;
+  transition: 0.3s ease;
+}
+
+.l:hover {
+  color: rgb(69, 159, 189);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: 'Bungee', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+li {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px rgba( 0, 0, 0, 2);
+  color: orange;
+  font-size: 17px;
+}
+
+/* ABOUT */
+
+.about {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 500px;
+
+  background-color: rgb(69, 159, 189);
+  border-radius: 35px;
+  z-index: -1;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.about:hover {
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+}
+
+.about-me {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 70px;
+  margin-left: 5px;
+}
+
+.symbol-1 {
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.symbol-2 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.symbol-3 {
+  color: black;
+  font-size: 20px;
+  padding: 2px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.frontend {
+  color: orange;
+}
+
+.about-me h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 35px;
+  color: orange;
+}
+
+.about-me h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 65px;
+  margin-left: 40px;
+}
+
+.about-me h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.me {
+  flex: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.me .predrag {
+  width: 375px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.me .predrag:hover {
+  transform: scale(1.1);
+}
+
+.me .blob {
+  width: 470px;
+  height: 380px;
+  position: absolute;
+  top: 69px;
+}
+
+/* SECTION 1 */
+
+.section-1 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 500px;
+  border-radius: 35px;
+  margin-top: 40px;
+}
+
+.skills {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 70px;
+  margin-left: 5px;
+}
+
+.skills-question {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 35px;
+  color: orange;
+}
+
+.skill-desc {
+  font-family: 'Bungee', cursive;
+  font-size: 65px;
+  margin-left: 40px;
+}
+
+.skilled {
+  color: rgb(69, 159, 189);
+  text-decoration: underline;
+}
+
+.cartoon-1 {
+  flex: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cartoon-1 img {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+}
+
+.blob1 {
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 500px;
+  border-radius: 35px;
+}
+
+.find-out {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 70px;
+  margin-left: 5px;
+}
+
+.find-out h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 35px;
+  color: orange;
+  white-space: nowrap;
+}
+
+.find-out .btn {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: 'Bungee', cursive;
+
+  border: none;
+  background-color: rgb(69, 159, 189);
+  color: white;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.find-out .btn:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+.cartoon-2 {
+  flex: 7;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blob2 {
+  width: 470px;
+  height: 380px;
+  position: absolute;
+  top: 69px;
+  z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1684px) {
+ .about {
+   width: 70%;
+   margin: 0 auto;
+   display: flex;
+   height: 700px;
+   background-color: rgb(69, 159, 189);
+   border-radius: 35px;
+   z-index: -1;
+   transition: 0.3s ease;
+   flex-direction: column;
+   overflow: hidden;
+   text-align: center;
+ } 
+
+ .me {
+   flex: 5;
+   position: relative;
+   display: flex;
+   justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .about-me {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 70px;
+    margin-left: 0px;
+  }
+
+  .about-me h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 65px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1379px) {
+  .section-1 {
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 35px;
+    text-align: center;
+    height: 700px;
+    overflow: hidden;
+  } 
+
+  .skills {
+    flex: 3;
+  }
+
+  .cartoon-1 {
+   flex: 8;
+   position: relative;
+   display: flex;
+   justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1381px) {
+  .section-2 {
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 35px;
+    text-align: center;
+    height: 700px;
+    overflow: hidden;
+  } 
+
+  .btn-warpper {
+    width: 70%;
+  }
+
+  .find-out .btn {
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Bungee', cursive;
+  
+    border: none;
+    background-color: rgb(69, 159, 189);
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+  }
+   
+  .cartoon-2 {
+    flex: 7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
