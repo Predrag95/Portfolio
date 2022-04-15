@@ -376,7 +376,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 1379px) {
+@media only screen and (max-width: 1402px) {
   .section-1 {
     padding-top: 50px;
     width: 70%;
@@ -444,4 +444,37 @@ li {
     justify-content: center;
     margin-top: 30px;
   }
+
+  .section-2 {
+    justify-content: center;
+  }
 }
+
+@media only screen and (max-width: 867px) {
+  .cartoon-1 img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 526px) {
+  .cartoon-1 {
+    margin-top: -50px;
+  }
+
+  .cartoon-1 img {
+    width: 300px;
+    height: 220px;
+  }
+
+  .skill-desc {
+    margin-left: 0px;
+    font-size: 53px;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  .me .predrag {
+    width: 298px;
+  }
+}
+
