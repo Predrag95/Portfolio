@@ -126,6 +126,7 @@ li {
   font-family: 'Bungee', cursive;
   font-size: 65px;
   margin-left: 40px;
+  transition: 0.3s ease;
 }
 
 .about-me h2 {
@@ -147,6 +148,10 @@ li {
   bottom: 0;
   z-index: 1;
   transition: 0.3s ease;
+}
+
+.about-me-h1-white {
+  color: white;
 }
 
 .me .predrag:hover {
@@ -192,9 +197,14 @@ li {
   margin-left: 40px;
 }
 
+.skilled:hover {
+  text-shadow: 1px 1px 3px black;
+}
+
 .skilled {
   color: rgb(69, 159, 189);
   text-decoration: underline;
+  transition: 0.3s ease;
 }
 
 .cartoon-1 {
@@ -455,6 +465,10 @@ li {
   .cartoon-1 img {
     width: 400px;
   }
+
+  .find-out h3 {
+    white-space: normal;
+  }
 }
 
 @media only screen and (max-width: 526px) {
@@ -471,11 +485,21 @@ li {
     margin-left: 0px;
     font-size: 53px;
   }
+
+  .section-2 {
+    padding-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 619px) {
   .me .predrag {
     width: 298px;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .nav {
+    display: none;
   }
 }
 
