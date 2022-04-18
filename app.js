@@ -5,11 +5,15 @@ const cartoon2 = document.querySelector('.cartoon-2');
 const developer = document.querySelector('.developer');
 const blob2 = document.querySelector('.blob2');
 const exitBtn = document.getElementById('use-1');
+const h1 = document.querySelector('.about-me-h1');
+const h1Again = document.querySelector('.about-me-h1');
+
 let buttonClicked = false
 
 exitBtn.addEventListener('click', clickedExit);
 btn.addEventListener('click', clickedBtn);
-
+h1.addEventListener('mouseover', h1Hover);
+h1Again.addEventListener('mouseout', h1Out);
 
 function clickedBtn() {
   if (buttonClicked) {
@@ -54,3 +58,11 @@ function clickedExit() {
   cartoon2.remove('p')
   buttonClicked = false
 };
+
+function h1Hover() {
+  h1.classList.add('about-me-h1-white');
+}
+
+function h1Out() {
+  h1.classList.remove('about-me-h1-white');
+}
