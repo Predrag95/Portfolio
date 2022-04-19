@@ -7,6 +7,11 @@ const blob2 = document.querySelector('.blob2');
 const exitBtn = document.getElementById('use-1');
 const h1 = document.querySelector('.about-me-h1');
 const h1Again = document.querySelector('.about-me-h1');
+const aboutMe = document.querySelector('.about-me');
+const me = document.querySelector('.me');
+const about = document.querySelector('.about');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
 let buttonClicked = false
 
@@ -14,6 +19,7 @@ exitBtn.addEventListener('click', clickedExit);
 btn.addEventListener('click', clickedBtn);
 h1.addEventListener('mouseover', h1Hover);
 h1Again.addEventListener('mouseout', h1Out);
+hamburger.addEventListener('click', hamburgerMenu);
 
 function clickedBtn() {
   if (buttonClicked) {
@@ -66,3 +72,8 @@ function h1Hover() {
 function h1Out() {
   h1.classList.remove('about-me-h1-white');
 }
+
+function hamburgerMenu() {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+};
