@@ -487,6 +487,10 @@ li {
   .find-out h3 {
     white-space: normal;
   }
+
+  .about-me h1 {
+    font-size: 53px;
+  }
 }
 
 @media only screen and (max-width: 526px) {
@@ -506,6 +510,22 @@ li {
 
   .section-2 {
     padding-top: 10px;
+  }
+
+  .about-me h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 27px;
+    transition: 0.3s ease;
+    line-height: 53px;
+  }
+
+  .about-me h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .about {
+    height: 560px;
   }
 }
 
